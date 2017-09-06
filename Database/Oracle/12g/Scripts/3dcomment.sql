@@ -1,0 +1,10 @@
+create user x3dcomment identified by x3dcomment;
+grant CREATE SEQUENCE to x3dcomment;
+grant CREATE SESSION to x3dcomment;
+grant CREATE TABLE to x3dcomment;
+grant CREATE VIEW to x3dcomment;
+grant CREATE PROCEDURE to x3dcomment;
+grant CREATE TRIGGER to x3dcomment;
+CREATE SMALLFILE TABLESPACE "x3dcomment" LOGGING DATAFILE 'D:\Oracle\oradata\V6R2017X\x3dcomment.dbf' SIZE 10M AUTOEXTEND ON NEXT 10M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
+ALTER USER x3dcomment default tablespace "x3dcomment";
+ALTER USER x3dcomment QUOTA UNLIMITED ON "x3dcomment";

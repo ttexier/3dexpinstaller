@@ -1,0 +1,10 @@
+create user x3dnotif identified by x3dnotif;
+grant CREATE SEQUENCE to x3dnotif;
+grant CREATE SESSION to x3dnotif;
+grant CREATE TABLE to x3dnotif;
+grant CREATE VIEW to x3dnotif;
+grant CREATE PROCEDURE to x3dnotif;
+grant CREATE TRIGGER to x3dnotif;
+CREATE SMALLFILE TABLESPACE "x3dnotif" DATAFILE 'D:\Oracle\oradata\V6R2017X\x3dnotification01.dbf' SIZE 50M AUTOEXTEND ON NEXT 50M MAXSIZE UNLIMITED EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
+ALTER USER x3dnotif default tablespace "x3dnotif";
+ALTER USER x3dnotif QUOTA UNLIMITED ON "x3dnotif";
