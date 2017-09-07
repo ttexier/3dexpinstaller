@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\X3D_CMNT.media\media">
+	<SetVariable name="SOCIAL_SHARED_DIR" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DCommentData"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_LOG_DIR" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DComment\3DCommentLog"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_TMP_DIR" setByUser="true" setType="default">
+		<SetPath value="C:\Users\ADMINI~1\AppData\Local\Temp\Dassault Systemes\3DComment"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_DB_MSSQL_SERVER" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_DB_MSSQL_DBNAME" setByUser="true" setType="default">
+		<SetText value="DB3DCOM"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_DB_MSSQL_ADMIN_USER" setByUser="true" setType="default">
+		<SetText value="x3ds_admin"/>
+	</SetVariable>
+	<SetVariableProtected name="SOCIAL_DB_MSSQL_ADMIN_PASSWORD" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="SOCIAL_DB_MSSQL_USER" setByUser="true" setType="default">
+		<SetText value="x3ds"/>
+	</SetVariable>
+	<SetVariableProtected name="SOCIAL_DB_MSSQL_PASSWORD" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="SOCIAL_TOMCAT_PORT" setByUser="true" setType="default">
+		<SetPort value="8093"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_DB_TYPE" setByUser="true" setType="default"/>
+	<SetVariable name="SOCIAL_DB_TYPE?oracle" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="SOCIAL_DB_TYPE?sqlserver" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DComment"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+</Media>

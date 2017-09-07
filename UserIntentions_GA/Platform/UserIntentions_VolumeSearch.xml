@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\ENOVIA_PIX.media\media">
+	<SetVariable name="CustomShortcuts" setByUser="true" setType="default"/>
+	<SetVariable name="CustomShortcuts?AdminToolsShortcut" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="KoaHostname" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="KoaPort" setByUser="true" setType="default">
+		<SetPort value="58000"/>
+	</SetVariable>
+	<SetVariable name="KoaNumberOfServers" setByUser="true" setType="default">
+		<SetText value="5"/>
+	</SetVariable>
+	<SetVariable name="KoaRMIPath" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DSpace"/>
+	</SetVariable>
+	<SetVariable name="BBD_HOST" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="BBD_PORT" setByUser="true" setType="default">
+		<SetPort value="8070"/>
+	</SetVariable>
+	<SetVariable name="BBD_URI" setByUser="true" setType="default">
+		<SetText value="internal"/>
+	</SetVariable>
+	<SetVariable name="BBD_USER" setByUser="true" setType="default">
+		<SetText value="3DIndexAdminUser"/>
+	</SetVariable>
+	<SetVariableProtected name="BBD_PASSWD" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="BBD_ROLE" setByUser="true" setType="default">
+		<SetText value="VPLMAdmin.Company Name.Default"/>
+	</SetVariable>
+	<SetVariable name="BBD_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\VolumeSearch\3DIndexes"/>
+	</SetVariable>
+	<SetVariable name="BOOL_IndexToolsShortcut" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="RB_InstallType" setByUser="true" setType="default"/>
+	<SetVariable name="RB_InstallType?Typical" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="RB_InstallType?Custom" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\VolumeSearch"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+</Media>

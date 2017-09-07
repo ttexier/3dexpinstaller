@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\X3D_SEAR.media\media">
+	<SetVariable name="X3DCSMA_3DPassportURL" setByUser="true" setType="default">
+		<SetText value="https://3dpassport.bioprojet.com:444/3dpassport"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_FEDERATED_SEARCH" setByUser="true" setType="default">
+		<SetText value="https://3dsearch.bioprojet.com:444/federated"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DSpaceURL" setByUser="true" setType="default">
+		<SetText value="https://3dspace.bioprojet.com:444/3dspace"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DSWYMURL" setByUser="true" setType="default">
+		<SetText value=""/>
+	</SetVariable>
+	<SetVariable name="X3DSEAR_TomcatPort" setByUser="true" setType="default">
+		<SetPort value="8087"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\FedSearch"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+</Media>

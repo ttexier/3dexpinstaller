@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\X3D_DASH.media\media">
+	<SetVariable name="uwp_sqlserver_server" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="uwp_sqlserver_database_name" setByUser="true" setType="default">
+		<SetText value="DB3DDASH"/>
+	</SetVariable>
+	<SetVariable name="uwp_sqlserver_setup_database_user" setByUser="true" setType="default">
+		<SetText value="x3ddash_admin"/>
+	</SetVariable>
+	<SetVariableProtected name="uwp_sqlserver_setup_database_password" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="uwp_sqlserver_database_user" setByUser="true" setType="default">
+		<SetText value="x3ddash"/>
+	</SetVariable>
+	<SetVariableProtected name="uwp_sqlserver_database_password" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="X3DCSMA_3DPassportURL" setByUser="true" setType="default">
+		<SetText value="https://3dpassport.bioprojet.com:444/3dpassport"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DDashboardURL" setByUser="true" setType="default">
+		<SetText value="https://3ddashboard.bioprojet.com:444/3ddashboard"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DCompassURL" setByUser="true" setType="default">
+		<SetText value="https://3dspace.bioprojet.com:444/3dspace"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_6WTAGURL" setByUser="true" setType="default">
+		<SetText value="https://3dspace.bioprojet.com:444/3dspace"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_HOST" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_MAIL_SENDER" setByUser="true" setType="default">
+		<SetText value="admin_platform@bioprojet.com"/>
+	</SetVariable>
+	<SetVariable name="dsi_database_type" setByUser="true" setType="default"/>
+	<SetVariable name="dsi_database_type?oracle" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="dsi_database_type?sqlserver" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="tomcat_port" setByUser="true" setType="default">
+		<SetPort value="8084"/>
+	</SetVariable>
+	<SetVariable name="dsi_domain_untrusted" setByUser="true" setType="default">
+		<SetText value="untrusted.3ddashboard.bioprojet.com"/>
+	</SetVariable>
+	<SetVariable name="dsi_uwaProxy_domainWhiteList" setByUser="true" setType="default">
+		<SetText value=".*"/>
+	</SetVariable>
+	<SetVariable name="dsi_shared_dir" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DDashboardData"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DDashboard"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+</Media>

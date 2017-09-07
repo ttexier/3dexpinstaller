@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\X3D_PASS.media\media">
+	<SetVariable name="Java@jdk" setByUser="true" setType="default">
+		<SetJavaPath value="C:\Java64\jdk1.8.0_131"/>
+	</SetVariable>
+	<SetVariable name="installEmbeddedServerJRE" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="PASS_MSSQL_SQLURL_HOST_AND_PORT" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="PASS_MSSQL_SQLURL_SCHEMA" setByUser="true" setType="default">
+		<SetText value="x3dpassDB"/>
+	</SetVariable>
+	<SetVariable name="PASS_MSSQL_SQLUserAdmin" setByUser="true" setType="default">
+		<SetText value="x3dpass_admin"/>
+	</SetVariable>
+	<SetVariableProtected name="PASS_MSSQL_SQLPasswordAdmin" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="PASS_MSSQL_SQLUser" setByUser="true" setType="default">
+		<SetText value="x3dpass"/>
+	</SetVariable>
+	<SetVariableProtected name="PASS_MSSQL_SQLPassword" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="PASS_MSSQL_SQLURLCas_HOST_AND_PORT" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="PASS_MSSQL_SQLURLCas_SCHEMA" setByUser="true" setType="default">
+		<SetText value="x3dpass_tkDB"/>
+	</SetVariable>
+	<SetVariable name="PASS_MSSQL_SQLUserCas" setByUser="true" setType="default">
+		<SetText value="x3dpass_tk"/>
+	</SetVariable>
+	<SetVariableProtected name="PASS_MSSQL_SQLPasswordCas" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="PASS_MSSQL_DatabaseConnectionCheck" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DPassportURL" setByUser="true" setType="default">
+		<SetText value="https://3dpassport.bioprojet.com:444/3dpassport"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DCompassURL" setByUser="true" setType="default">
+		<SetText value="https://3dspace.bioprojet.com:444/3dspace"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_HOST" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_MAIL_SENDER" setByUser="true" setType="default">
+		<SetText value="admin_platform@bioprojet.com"/>
+	</SetVariable>
+	<SetVariable name="installEmbeddedTomEE" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="DatabaseType" setByUser="true" setType="default"/>
+	<SetVariable name="DatabaseType?oracle" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="DatabaseType?sqlserver" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="AdminPlatformEmail" setByUser="true" setType="default">
+		<SetText value="admin_platform@bioprojet.com"/>
+	</SetVariable>
+	<SetVariableProtected name="AdminPlatformPassword" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="PassTomcatListenPort" setByUser="true" setType="default">
+		<SetPort value="8081"/>
+	</SetVariable>
+	<SetVariable name="ForceLowerCase" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DPassport"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+	<SetVariable fromFeature="CODE\win_b64\X3D_PASS.media" name="DSYWelcomePanel" setByUser="true" setType="default">
+        <SetWelcome value="true"/>
+	</SetVariable>
+</Media>

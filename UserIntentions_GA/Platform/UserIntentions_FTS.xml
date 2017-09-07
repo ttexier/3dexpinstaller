@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\ENOVIA_SXI.media\media">
+	<SetVariable name="FullCloud_URL" setByUser="true" setType="default">
+		<SetText value="http://localhost:19000"/>
+	</SetVariable>
+	<SetVariableProtected name="FullCloud_AdminPassword" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="Radio_mode" setByUser="true" setType="default"/>
+	<SetVariable name="Radio_mode?Simple" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="Radio_mode?Custom" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\FulltextSearchServer"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+</Media>

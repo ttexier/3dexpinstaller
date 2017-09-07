@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\ENOVIA_LRA.media\media">
+	<SetVariable name="PATH_PH_Server" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DSpace"/>
+	</SetVariable>
+	<SetVariable name="Text_SuperUserName" setByUser="true" setType="default">
+		<SetText value="creator"/>
+	</SetVariable>
+	<SetVariableProtected name="Text_SuperUserPwd" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DSpace\Apps\LifeSciencesRegulatoryAffairs\V6R2017x"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+	<SetVariable name="BOOL_UpdateDB" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable fromFeature="CODE\win_b64\ENOVIA_LRA.media" name="DSYWelcomePanel" setByUser="true" setType="default">
+        <SetWelcome value="true"/>
+	</SetVariable>
+</Media>

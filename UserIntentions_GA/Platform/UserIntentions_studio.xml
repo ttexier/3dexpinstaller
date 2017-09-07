@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\ENOVIA_DMP.media\media">
+	<SetVariable name="Java@jdk" setByUser="true" setType="default">
+		<SetJavaPath value="C:\Java64\jdk1.8.0_131"/>
+	</SetVariable>
+	<SetVariable name="Radio_DBChoice" setByUser="true" setType="default"/>
+	<SetVariable name="Radio_DBChoice?Oracle" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="Radio_DBChoice?Others" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="Path_ConnectionFilePath" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\studio"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\studio"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+	<SetVariable fromFeature="CODE\win_b64\ENOVIA_DMP.media" name="DSYWelcomePanel" setByUser="true" setType="default">
+        <SetWelcome value="true"/>
+	</SetVariable>
+</Media>

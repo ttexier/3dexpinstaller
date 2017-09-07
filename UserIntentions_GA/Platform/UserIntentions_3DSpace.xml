@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Media mediaLevel="419" mediaName="CODE\win_b64\X3D_CSMA.media\media">
+	<SetVariable name="MSSQL_ConnectUser" setByUser="true" setType="default">
+		<SetText value="sa"/>
+	</SetVariable>
+	<SetVariableProtected name="MSSQL_ConnectPwd" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="MSSQL_Instance" setByUser="true" setType="default">
+		<SetText value="spacedb"/>
+	</SetVariable>
+	<SetVariable name="MSSQL_Server" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="CreateNewMSSQL_DB" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="PathMSSQLFiles" setByUser="true" setType="default">
+		<SetPath value="D:\Data\DB"/>
+	</SetVariable>
+	<SetVariable name="MSSQL_Default_Data_FG" setByUser="true" setType="default">
+		<SetText value=""/>
+	</SetVariable>
+	<SetVariable name="MSSQL_Default_Index_FG" setByUser="true" setType="default">
+		<SetText value=""/>
+	</SetVariable>
+	<SetVariable name="Radio_DBChoice" setByUser="true" setType="default"/>
+	<SetVariable name="Radio_DBChoice?Oracle" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="Radio_DBChoice?SQL2008" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariableProtected name="X3DCSMA_creator_password" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariableProtected name="X3DCSMA_administor_password" setByUser="true" setType="default">
+		<SetText value="Put your password here."/>
+	</SetVariableProtected>
+	<SetVariable name="DATA_TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DSpaceData"/>
+	</SetVariable>
+	<SetVariable name="Text_DataTBS_wrap" setByUser="true" setType="default">
+		<SetText value="I1_DATA"/>
+	</SetVariable>
+	<SetVariable name="Text_IndexTBS_wrap" setByUser="true" setType="default">
+		<SetText value="I1_INDEX"/>
+	</SetVariable>
+	<SetVariable name="VplmDataTBS" setByUser="true" setType="default">
+		<SetText value="V1_DATA"/>
+	</SetVariable>
+	<SetVariable name="VplmIndexTBS" setByUser="true" setType="default">
+		<SetText value="V1_INDEX"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DPassportURL" setByUser="true" setType="default">
+		<SetText value="https://3dpassport.bioprojet.com:444/3dpassport"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_FULL_TEXT_SEARCH" setByUser="true" setType="default">
+		<SetText value="http://fulltextsearch.bioprojet.com:19000"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_FEDERATED_SEARCH" setByUser="true" setType="default">
+		<SetText value="https://3dsearch.bioprojet.com:444/federated"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DDashboardURL" setByUser="true" setType="default">
+		<SetText value="https://3ddashboard.bioprojet.com:444/3ddashboard"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DSpaceURL" setByUser="true" setType="default">
+		<SetText value="https://3dspace.bioprojet.com:444/3dspace"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DSWYMURL" setByUser="true" setType="default">
+		<SetText value=""/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_ENOVIAV5" setByUser="true" setType="default">
+		<SetText value="https://enoviav5.bioprojet.com:444/enoviav5"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DCommentURL" setByUser="true" setType="default">
+		<SetText value="https://3dcomment.bioprojet.com:444/3dcomment"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_3DNotificationURL" setByUser="true" setType="default">
+		<SetText value="https://3dnotification.bioprojet.com:444/3dnotification"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_HOST" setByUser="true" setType="default">
+		<SetText value="localhost"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SMTP_MAIL_SENDER" setByUser="true" setType="default">
+		<SetText value="admin_platform@bioprojet.com"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_build_archives" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_deploy_archives" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_JavaHeapSize" setByUser="true" setType="default"/>
+	<SetVariable name="X3DCSMA_JavaHeapSize?BOOL_MediumJavaHeapSize" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_JavaHeapSize?BOOL_LargeJavaHeapSize" setByUser="true" setType="default">
+		<SetBoolean value="false"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_portCAS" setByUser="true" setType="default">
+		<SetPort value="8090"/>
+	</SetVariable>
+	<SetVariable name="certificates_repository" setByUser="true" setType="default">
+		<SetPath value="C:\Apache24\conf\ssl"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_SXI_postinstall" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_BOOL_ToolsinStartMenu" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="X3DCSMA_BOOL_ShortcutsOnDesktop" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+	<SetVariable name="TARGET_PATH" setByUser="true" setType="default">
+		<SetPath value="D:\V6R2017x\3DSpace"/>
+	</SetVariable>
+	<SetVariable name="FinishPanel" setByUser="true" setType="default"/>
+	<SetVariable name="BOOL_UpdateDB" setByUser="true" setType="default">
+		<SetBoolean value="true"/>
+	</SetVariable>
+</Media>
