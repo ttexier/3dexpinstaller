@@ -208,6 +208,51 @@ Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scr
 
 ; Creation de l odbc pour 3dspace
 
+Filename: "{app}\batch\odbc_creation.bat";
+
+; installation 3DPassport
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %JDK_Path% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %Embedded_JRE% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %SQLHOSTNAME% ""{code:GetOracleHome}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %SQL_Passport_SCHEMA% ""{code:GetOracleName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %ADMIN_user% ""{code:GetOracleUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %ADMIN_user_Password% ""{code:GetOraclePassword}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %User% ""{code:GetOracleDbName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %User_Password% ""{code:GetOracleTableSpaceData}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %CAS_Hostname% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %CAS_Schema% ""{code:GetEnoviaPath}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %CAS_User% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %CAS_User_Password% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %3DPassport_URL% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %3DCompass_URL% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %SMTP_Host% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %SMTP_email% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %Embed_TomEE% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %DB_Type% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %AdminPlatform_email% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %AdminPlatform_Pwd% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %Tomcat_Port% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %Forced_Lower_case% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml %Install_Path% ""{code:GetOracleTableSpaceIndex}"""; Flags: waituntilterminated runhidden; StatusMsg: "Inscription de Oracle Home"; Languages: en fr
+
+
+; Installation de server 2014x
+
+Filename: "{app}\Sources\Enovia\2014x\ENOVIALiveCollaborationServer.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions\2014x\GA\UserIntentionsServer.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallServer}"; Languages: en fr
+
+; installation 3DDashboard
+
+; installation Federated Search
+
+; installation FTS
+
+; installation 3DSpace
+
+; installation 3DIndex
+
+; installation 3DComment
+
 
 
 [Files]
