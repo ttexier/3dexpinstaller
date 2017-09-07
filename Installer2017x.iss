@@ -56,6 +56,13 @@ Filename: "{app}\batch\mkdir.bat"; Parameters: "{tmp}"; Flags: waituntilterminat
 
 Filename: "{app}\batch\firewall_off.bat"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:StopFirewall}"; Languages: en fr
 
+;Installation des KB Windows 
+;KB2919355-x64
+;KB2919442-x64
+;KB2932046-x64
+;KB2934018-x64
+;KB2937592-x64
+;KB2938439-x64
 
 ;VC Redist
 Filename: "{app}\batch\mkdir.bat"; Parameters: "{tmp}\VC"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallVC}"; Languages: en fr
