@@ -128,10 +128,12 @@ Filename: "{app}\batch\robocopybat.bat"; Parameters: """{app}\Apache\Configurati
 
 ; Configuration de apache
 
+
 ; vhost update
-
-; A FAIRE
-
+; a faire pour chaque fichier .conf
+Filename: "{app}\batch\switch.exe"; Parameters: "{code:GetApacheHome}\conf\httpd.conf %PORT% ""{code:GetApacheHome}"""; Flags: waituntilterminated runhidden; StatusMsg: "Configuration de httpd.conf"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{code:GetApacheHome}\conf\httpd.conf %ServerName% ""{code:GetApacheHome}"""; Flags: waituntilterminated runhidden; StatusMsg: "Configuration de httpd.conf"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{code:GetApacheHome}\conf\httpd.conf %ServerAlias% ""{code:GetApacheHome}"""; Flags: waituntilterminated runhidden; StatusMsg: "Configuration de httpd.conf"; Languages: en fr
 
 
 ; httpd.conf
@@ -379,6 +381,40 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %DB_SQL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+
+
+; Dans CNV :
+  ;             ENOVIAX-CADDesignFoundation-V6R2017x.Windows64   (DESIGNER CENTRAL)
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ENOVIAX-CADDesignFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+
+   ;            ConnectorforCATIAV5Server-V6R2017x.Windows64
+    ;           ConnectorforSTEPServer-V6R2017x.Windows64
+     ;          ConnectorforSolidWorks
+      ;         ConnectorforAutoCAD
+
+; Dans CSV:
+       ;        ENOVIACollaborationforMicrosoftServer-V6R2017x.Windows64
+        ;       ENOVIAIntegrationExchangeFramework-V6R2017x.Windows64
+
+
+; Installation de CHG- ENOVIA enterprise Change management
+
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\CHG-ChangeManagement\ENOVIAMyChanges\ENOVIAEnterpriseChangeManagement.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+
+; Installation de CCM - ClassificationManager
 
 
 [Files]
