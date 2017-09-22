@@ -191,9 +191,7 @@ Filename: "{code:GetSourcesFolder}\DATABASE\SQLServer2008R2\setup.exe"; Paramete
 ; il faudrait supprimer les sources
 
 ; Creation des bases de donnees
-
 ;Passport
-
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DPassport.sql %PASSPORTDB% ""{code:GetSQlServerPassportDBName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DPassport.sql %PASSPORTUSER% ""{code:GetSQlServerPassportUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DPassport.sql %PASSPORTADMINUSER% ""{code:GetSQlServerPassportAdminUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
@@ -202,7 +200,31 @@ Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scr
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DPassport.sql %PASSPORTTOKENSUSERPASSWORD% ""{code:GetSQlServerPassportTokensUserPassword}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
 
 ;Space
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %DB_NAME% ""{code:GetSQlServer3DSpaceDBName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpace"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %DB_File_Path% ""{code:GetSQlServer3DSpaceDBFilePath}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpace"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %I1_DATA% ""{code:GetSQlServer3DSpaceI1Data}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpace"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %I1_INDEX% ""{code:GetSQlServer3DSpaceI1Index}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpace"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %V1_DATA% ""{code:GetSQlServer3DSpaceV1Data}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpace"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %V1_INDEX% ""{code:GetSQlServer3DSpaceV1Index}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %Login% ""{code:GetSQlServer3DSpaceLoginName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DSpacew"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DSpace.sql %Password ""{code:GetSQlServer3DSpacePassword}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DPassport"; Languages: en fr
 
+;3DComment
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DComment.sql %DB_NAME% ""{code:GetSQl3DCommentDBName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DComment"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DComment.sql %DB_user% ""{code:GetSQl3DCommentUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DComment"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DComment.sql %DB_Admin_User% ""{code:GetSQl3DCommentDBAdminUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DComment"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DComment.sql %DB_user_Pwd% ""{code:GetSQl3DCommentDBUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DComment"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DComment.sql %DB__Admin_user_Pwd% ""{code:GetSQl3DCommentDBAdminUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données 3DComment"; Languages: en fr
+
+;3DDashboard
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB_NAME% ""{code:GetSQl3DDashboardDBName}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB_user% ""{code:GetSQl3DDashboardUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB_Admin_User% ""{code:GetSQl3DDashboardDBAdminUser}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB_user_Pwd% ""{code:GetSQl3DDashboardDBUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
+Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB__Admin_user_Pwd% ""{code:GetSQl3DDashboardDBAdminUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
+
+
+;3DSwym ? 
 
 
 
@@ -216,12 +238,12 @@ Filename: "{app}\batch\odbc_creation.bat";
 
 Filename: "{app}\Sources\2017x\GA\AM_3DEXP_AppDevSuite.AllOS\1\DataModelDevelopment\StudioModelingPlatformRichClients.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DPassport.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:Install3DPassport}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %JDK_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %DB_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %DB_Others% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Connection_File_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Chemin du JDK"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %JDK_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %DB_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %DB_Others% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Connection_File_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_studio.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Studio"; Languages: en fr
 
 ; Installation de 3DPassport
 
@@ -291,111 +313,138 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 
 Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\3\Full-textSearchServerwithExalead\Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Cloud_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Cloud_Admin_Password% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Radio_mode_simple% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Radio_mode_custom% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Cloud_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Cloud_Admin_Password% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Radio_mode_simple% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Radio_mode_custom% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du FTS"; Languages: en fr
 
 ; installation 3DSpace
 
-Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\3\Full-textSearchServerwithExalead\Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_FTS.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\3\Full-textSearchServerwithExalead\Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_connect_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_connect_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_instance% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_NewDB_Creation% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_files_path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Data_FG% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Index_FG% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %DBchoice_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %DBchoice_SQL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_creator_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_admin_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSpace_Data_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Text_Data_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Text_Index_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %VPLM_Data_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %VPLM_Index_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DPassport_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FTS_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FedSearch_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DDashboard_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSpace_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSwym_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %EnoV5_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DComment_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DNotification_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SMTP_hostname% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SMTP_email% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Build_archives% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Deploy_archives% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %JavaHeapSize_medium% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %JavaHeapSize_Large% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CAS_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Certificates_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SXI_postinstall% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMATool_in_start_menu% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_shortcuts% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_connect_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_connect_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_instance% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_NewDB_Creation% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_files_path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Data_FG% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SQL_Index_FG% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %DBchoice_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %DBchoice_SQL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_creator_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_admin_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSpace_Data_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Text_Data_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Text_Index_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %VPLM_Data_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %VPLM_Index_TBS% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DPassport_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FTS_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FedSearch_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DDashboard_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSpace_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DSwym_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %EnoV5_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DComment_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %3DNotification_URL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SMTP_hostname% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SMTP_email% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Build_archives% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Deploy_archives% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %JavaHeapSize_medium% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %JavaHeapSize_Large% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CAS_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Certificates_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %SXI_postinstall% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMATool_in_start_menu% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %CSMA_shortcuts% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DSpace.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de 3DSpace"; Languages: en fr
 
 ; installation 3DIndex
 
 Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\3\3DIndexingServer\Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Custom_Shortcuts% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_host% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_number% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_RMi_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_host% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Uri% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_User% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_role% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Paths% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Index_Tool_Shortcut% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Install_typical% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Install_Custom% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Custom_Shortcuts% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_host% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_number% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Koala_RMi_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_host% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Uri% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_User% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_role% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %BBD_Paths% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Index_Tool_Shortcut% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Install_typical% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Install_Custom% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_VolumeSearch.xml %FinishPanel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DIndex"; Languages: en fr
 
 ; installation 3DComment
 Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\4\3DComment\Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %3DComment_Data_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %3DComment_Log_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Temp_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_Hostname% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_DB_name% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_admin_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_admin_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_user_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Tomcat_port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %DB_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %DB_SQL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %3DComment_Data_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %3DComment_Log_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Temp_Dir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_Hostname% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_DB_name% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_admin_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_admin_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_user% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %SQL_user_Pwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Tomcat_port% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %DB_Oracle% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %DB_SQL% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation du 3DComment"; Languages: en fr
 
 
 ; Dans CNV :
   ;             ENOVIAX-CADDesignFoundation-V6R2017x.Windows64   (DESIGNER CENTRAL)
-Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ENOVIAX-CADDesignFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ENOVIAX-CADDesignFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Designer Central}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Designer Central"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Designer Central"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Designer Central"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Designer Central"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DesignerCentral.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Designer Central"; Languages: en fr
 
    ;            ConnectorforCATIAV5Server-V6R2017x.Windows64
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ConnectorforCATIAV5Server.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Connector for Catia V5 Server}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for Catia V5"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for Catia V5"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for Catia V5"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for Catia V5"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforCATIAV5.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for Catia V5"; Languages: en fr
+
+   
     ;           ConnectorforSTEPServer-V6R2017x.Windows64
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ConnectorforSTEPServer.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Collaboration for STEP}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for STEP"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for STEP"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for STEP"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for STEP"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforSTEP.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for STEP"; Languages: en fr
+
+	
      ;          ConnectorforSolidWorks
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ENOVIAX-CADDesignManagement\ConnectorforSolidWorksServer.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Connector for SolidWorks}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for SolidWorks"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for SolidWorks"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for SolidWorks"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for SolidWorks"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforSolidWorks.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for SolidWorks"; Languages: en fr
+
+	 
       ;         ConnectorforAutoCAD
 
 ; Dans CSV:
@@ -407,12 +456,12 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 
 Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\CHG-ChangeManagement\ENOVIAMyChanges\ENOVIAEnterpriseChangeManagement.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "URL de 3DPassport"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
 
 ; Installation de CCM - ClassificationManager
 
