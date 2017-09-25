@@ -49,7 +49,7 @@ Filename: "{app}\batch\appendhosts.bat"; Flags: waituntilterminated runhidden; S
 
 
 ; Creation de TEMP
-Filename: "{app}\batch\mkdir.bat"; Parameters: "{tmp}"; Flags: waituntilterminated runhidden; Languages: en fr
+Filename: "{app}\batch\mkdir.bat"; Parameters: "{code:GetMachineName}"; Flags: waituntilterminated runhidden; Languages: en fr
 
 
 ;Firewall Off 2008 Server
@@ -57,12 +57,12 @@ Filename: "{app}\batch\mkdir.bat"; Parameters: "{tmp}"; Flags: waituntilterminat
 Filename: "{app}\batch\firewall_off.bat"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:StopFirewall}"; Languages: en fr
 
 ;Installation des KB Windows 
-;KB2919355-x64
-;KB2919442-x64
-;KB2932046-x64
-;KB2934018-x64
-;KB2937592-x64
-;KB2938439-x64
+
+; A VERIFIER
+
+Filename: "{app}\batch\Install_KB_VC.bat"; Parameters: "{app}"; Flags: waituntilterminated runhidden; Languages: en fr
+
+
 
 ;VC Redist
 Filename: "{app}\batch\mkdir.bat"; Parameters: "{tmp}\VC"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallVC}"; Languages: en fr
@@ -446,10 +446,34 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 
 	 
       ;         ConnectorforAutoCAD
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CNV-CollaborativeInnovation\ConnectorforAutoCADServer.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Connector for AutoCAD}"; Languages: en fr
 
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for AutoCAD"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for AutoCAD"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for AutoCAD"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for AutoCAD"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ConnectorforAutoCAD.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Connector for AutoCAD"; Languages: en fr
+	  
+	  
 ; Dans CSV:
        ;        ENOVIACollaborationforMicrosoftServer-V6R2017x.Windows64
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CSV-IndustryInnovation\CollaborationforMicrosoft\ENOVIACollaborationforMicrosoftServer.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoft.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Collaboration for Microsoft}"; Languages: en fr	   
+	   
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoftServer.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for Microsoft"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoftServer.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for Microsoft"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoftServer.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for Microsoft"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoftServer.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for Microsoft"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborationforMicrosoftServer.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Collaboration for Microsoft"; Languages: en fr
+ 
+ 
         ;       ENOVIAIntegrationExchangeFramework-V6R2017x.Windows64
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CSV-IndustryInnovation\CollaborationforMicrosoft\ENOVIAIntegrationExchangeFramework.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{Installation de Integration Exchange Framework}"; Languages: en fr	   
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %Target_Path% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
 
 
 ; Installation de CHG- ENOVIA enterprise Change management
@@ -464,6 +488,8 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
 
 ; Installation de CCM - ClassificationManager
+
+
 
 
 [Files]
