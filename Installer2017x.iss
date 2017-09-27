@@ -223,7 +223,6 @@ Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scr
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB_user_Pwd% ""{code:GetSQl3DDashboardDBUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
 Filename: "{app}\batch\switch.exe"; Parameters: "{app}\Database\MSSQL\2008R2\Scripts\3DDashboard.sql %DB__Admin_user_Pwd% ""{code:GetSQl3DDashboardDBAdminUserPwd}"""; Flags: waituntilterminated runhidden; StatusMsg: "Création de la base de données Dashboard"; Languages: en fr
 
-
 ;3DSwym ? 
 
 
@@ -476,19 +475,86 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_IntegrationExchangeFramework.xml.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Integration Exchange Framework"; Languages: en fr
 
 
+         ;		Classify And Reuse - IP Classification Foundation
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CSV-IndustryInnovation\ENOVIAClassifyandReuse\ENOVIAIPClassificationFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_LibraryCentral.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallClassifyandReuse}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+
+
+
 ; Installation de CHG- ENOVIA enterprise Change management
 
-Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\CHG-ChangeManagement\ENOVIAMyChanges\ENOVIAEnterpriseChangeManagement.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_3DComment.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallFedSearch}"; Languages: en fr
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\CHG-ChangeManagement\ENOVIAMyChanges\ENOVIAEnterpriseChangeManagement.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_EnterpriseChangeMgt.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallCHG}"; Languages: en fr
 
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
-Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChange.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_EnterpriseChangeMgt.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de CHG - ENOVIA enterprise Change management"; Languages: en fr
 
-; Installation de CCM - ClassificationManager
+; Installation de GLR-RegulatoryAffairsManager / Adverse Event Reporting
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\GLR-RegulatoryAffairsManager\ENOVIAAdverseEventReporting\ENOVIAAdverseEventReportingFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_AdverseEventReporting.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallGLR}"; Languages: en fr
 
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_AdverseEventReporting.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR-Adverse Event Reporting"; Languages: en fr
+
+; Installation de QUM- CAPA and Audit Foundation
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\QUM-QualityManager\ENOVIACAPAandAuditManagement\ENOVIACAPAandAuditFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_CAPAandAuditFoundation.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallQUM1}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CAPAandAuditFoundation.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Installation de CAPA and Audit Foundation"; Languages: en fr
+
+; Installation de QUM- Complaints and NCR Management
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\QUM-QualityManager\ENOVIAComplaintsandNCRManagementforLifeSciences\ENOVIAComplaintsandNCRManagementFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_ComplaintsandNCRManagement.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallQUM2}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_ComplaintsandNCRManagement.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de Complaints and NCR Management"; Languages: en fr
+
+; Installation de GLR- Device Identification
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\GLR-RegulatoryAffairsManager\ENOVIADeviceIdentification\ENOVIADeviceIdentificationFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_ComplaintsandNCRManagement.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallGLR2}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DeviceIdentification.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de GLR- Device Identification"; Languages: en fr
+
+; Installation de GLR- Project Management Foundation
+
+; Installation de GLR- Market Registration Foundation
+
+; Installation de QUC- Quality Document Manager
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_WebApps.AllOS\1\QUC-QualityDocumentManager\ENOVIAQuality-basedDocumentControl\ENOVIADocumentControlFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_DocumentControlCentral.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallQUC}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_DocumentControlCentral.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de QUC-Quality Document Manager"; Languages: en fr
+
+; Installation de 
+
+;;;; UserIntentions_LifeSciencesRegulatoryAffairs.xml   ??
 
 
 
