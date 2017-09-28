@@ -490,6 +490,17 @@ Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
 Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_LibraryCentral.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
 
+			;	ENOVIA Collaborative Tasks
+Filename: "{app}\Sources\2017x\GA\AM_3DEXP_Platform.AllOS\1\CSV-IndustryInnovation\ENOVIACollaborativeTasks\ENOVIACollaborativeTasksFoundation.Windows64\1\StartTUI.exe"; Parameters: "--silent {app}\UserIntentions_GA\Platform\UserIntentions_CollaborativeTasks.xml"; Flags: waituntilterminated runhidden; StatusMsg: "{cm:InstallCollaborativeTasks}"; Languages: en fr
+
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %PATH_PH_Server% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Text_SuperUserName% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Text_SuperUserPwd% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Target_PATH% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Finish_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Path_CustomSchemaDir% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Update_DB% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
+Filename: "{app}\batch_utilities\switch.exe"; Parameters: "{app}\UserIntentions_GA\Apps\UserIntentions_CollaborativeTasks.xml %Welcome_Panel% ""{code:}"""; Flags: waituntilterminated runhidden; StatusMsg: "Installation de IP Classification Foundation"; Languages: en fr
 
 
 ; Installation de CHG- ENOVIA enterprise Change management
